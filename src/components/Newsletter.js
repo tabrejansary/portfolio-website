@@ -26,13 +26,13 @@ export const Newsletter = () => {
     setStatus('sending');
     setMessage('');
 
- const serviceID = 'service_yomakl9gmail';      // Replace with your EmailJS service ID
-    const templateID = 'template_634w6wj';    // Replace with your EmailJS template ID
-    const userID = 'rMHefcFD5evprxooR';         // Replace with your EmailJS user/public key
+    const serviceID = 'service_yomakl9gmail';
+    const templateID = 'template_634w6wj';
+    const userID = 'rMHefcFD5evprxooR';
 
     const templateParams = {
       email: email,
-      to_email: 'tbrz92648@gmail.com' // You can pass this to your EmailJS template if you want dynamic recipient
+      to_email: 'tbrz92648@gmail.com'
     };
 
     emailjs.send(serviceID, templateID, templateParams, userID)
@@ -49,25 +49,50 @@ export const Newsletter = () => {
   return (
     <Col lg={12}>
       <div className="newsletter-bx wow slideInUp">
-        <Row>
-          <Col lg={12} md={6} xl={5}>
+        <Row className="align-items-center">
+          <Col lg={12} md={6} xl={5} className="mb-3 mb-md-0">
             <h3>Subscribe to Newsletter<br /> & Never Miss Latest BlogPost Updates</h3>
-
             {status === 'sending' && <Alert>Sending...</Alert>}
             {status === 'error' && <Alert variant="danger">{message}</Alert>}
             {status === 'success' && <Alert variant="success">{message}</Alert>}
           </Col>
           <Col md={6} xl={7}>
             <form onSubmit={handleSubmit}>
-              <div className="new-email-bx">
+              <div className="new-email-bx d-flex flex-column flex-md-row gap-2">
                 <input
                   value={email}
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email Address"
                   required
+                  className="form-control form-control-lg"
+                  style={{
+                    padding: '15px 25px',
+                    borderRadius: '50px',
+                    border: 'none',
+                    outline: 'none',
+                    flex: '1',
+                    minWidth: '250px',
+                    fontSize: '16px',
+                    height: 'auto',
+                    boxShadow: 'none',
+                    backgroundColor: '#f8f9fa'
+                  }}
                 />
-                <button type="submit">Submit</button>
+                <button 
+                  type="submit"
+                  className="btn btn-primary btn-lg"
+                  style={{
+                    padding: '15px 30px',
+                    borderRadius: '50px',
+                    border: 'none',
+                    fontWeight: '600',
+                    whiteSpace: 'nowrap',
+                    fontSize: '16px'
+                  }}
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </Col>
