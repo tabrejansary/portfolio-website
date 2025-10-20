@@ -30,7 +30,7 @@ export const Projects = () => {
           "🌈 Beautiful gradients and animations"
         ],
         github: "https://github.com/tabrejansary/VaultFlow--Modern-analytics-design-1",
-        vercel: "https://vaultflow-modern-analytics-design-1.vercel.app/"
+        vercel: "https://vault-flow-modern-analytics-design.vercel.app/"
       }
     },
     {
