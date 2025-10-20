@@ -470,6 +470,129 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/************ Project Modal Css ************/
+.modal-content {
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-body {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: rgba(170, 54, 124, 0.5);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(170, 54, 124, 0.8);
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+.project-details {
+  color: #fff;
+}
+
+.project-details .project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #B8B8B8;
+}
+
+.project-details h5 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.project-details .tech-badges .badge {
+  font-size: 14px;
+  padding: 8px 15px;
+  font-weight: 500;
+}
+
+.project-details .features ul,
+.project-details .sections ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-details .features ul li,
+.project-details .sections ul li {
+  padding: 8px 0;
+  color: #B8B8B8;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.project-details .sections ul li strong {
+  color: #fff;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.project-links .btn-outline-primary {
+  border-color: #AA367C;
+  color: #AA367C;
+}
+
+.project-links .btn-outline-primary:hover {
+  background-color: #AA367C;
+  color: #fff;
+}
+
+.project-links .btn-outline-success {
+  border-color: #4A2FBD;
+  color: #4A2FBD;
+}
+
+.project-links .btn-outline-success:hover {
+  background-color: #4A2FBD;
+  color: #fff;
+}
+
+.project-links .text-muted {
+  color: #666 !important;
+  font-style: italic;
+}
+
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
