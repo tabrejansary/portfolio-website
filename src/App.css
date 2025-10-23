@@ -288,6 +288,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 @keyframes updown {
     0% {
